@@ -1,6 +1,7 @@
 ﻿#include "raylib.h"
 #include "Cube.h"
 #include "Terrain.h"
+#include "Player.h"
 #include <vector>
 
 //------------------------------------------------------------------------------------
@@ -13,48 +14,37 @@ int main(void)
     const int screenWidth = 1200;
     const int screenHeight = 800;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - 3d camera free");
-
-    // Define the camera to look into our 3d world
-    Camera3D camera = { 0 };
-    camera.position = { 10.0f, 10.0f, 10.0f }; // Camera position
-    camera.target = { 0.0f, 0.0f, 0.0f };      // Camera looking at point
-    camera.up = { 0.0f, 1.0f, 0.0f };          // Camera up vector (rotation towards target)
-    camera.fovy = 45.0f;                                // Camera field-of-view Y
-    camera.projection = CAMERA_PERSPECTIVE;             // Camera projection type
-
-    Vector3 cubePosition = { 0.0f, 0.0f, 0.0f };
+    InitWindow(screenWidth, screenHeight, "Voxel Game");
 
     Terrain* terrain = new Terrain();
-    terrain->generate();
+    //terrain->generate();
+
+    Player* player = new Player();
+    player->startPlayerGui(screenWidth,screenHeight);
 
     DisableCursor();               
 
     SetTargetFPS(60);  
     
-    //std::vector<Cube> cubes;
-
-    //Vector3 cPos = {1.0f,1.0f,1.0f};
-    //Cube cube(MAROON,cPos);
 
     while (!WindowShouldClose())       
     {
 
-        UpdateCamera(&camera, CAMERA_FREE);
+        player->render();
 
-        if (IsKeyPressed('Z')) camera.target = { 0.0f, 0.0f, 0.0f };
+        if (IsKeyPressed('Z')) player->camera.target = { 0.0f, 0.0f, 0.0f };
 
         BeginDrawing();
 
         ClearBackground(RAYWHITE);
 
-        BeginMode3D(camera);
+        player->renderPlayerGui();
+  
+        BeginMode3D(player->camera);
 
-        terrain->render();
+        //terrain->render();
 
-
-        DrawCube(cubePosition, 2.0f, 2.0f, 2.0f, RED);
-        DrawCubeWires(cubePosition, 2.0f, 2.0f, 2.0f, MAROON);
+        //DrawCubeWires(cubePosition, 2.0f, 2.0f, 2.0f, MAROON);
 
         DrawGrid(10, 1.0f);
 
@@ -72,7 +62,10 @@ int main(void)
 
     }
 
+    player->deallocateTexture();
 
+    delete player;
+    delete terrain;
     CloseWindow();        // Close window and OpenGL context
 
     return 0;

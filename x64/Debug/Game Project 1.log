@@ -2,9 +2,42 @@
 D:\Projects\C++\Game Project 1\Game Project 1\Terrain.h(36,18): warning C4244: 'başlatılıyor': 'double' - 'float' dönüşümü; veri kaybı olabilir
   ('Game%20Project%201.cpp' kaynak dosyası derleniyor)
   
-  Terrain.cpp
-D:\Projects\C++\Game Project 1\Game Project 1\Terrain.h(36,18): warning C4244: 'başlatılıyor': 'double' - 'float' dönüşümü; veri kaybı olabilir
-  ('Terrain.cpp' kaynak dosyası derleniyor)
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(47,23): warning C4244: '=': 'int' - 'float' dönüşümü; veri kaybı olabilir
+  ('Game%20Project%201.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(48,24): warning C4244: '=': 'int' - 'float' dönüşümü; veri kaybı olabilir
+  ('Game%20Project%201.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(49,32): warning C4244: '=': 'int' - 'float' dönüşümü; veri kaybı olabilir
+  ('Game%20Project%201.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(50,33): warning C4244: '=': 'int' - 'float' dönüşümü; veri kaybı olabilir
+  ('Game%20Project%201.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(54,51): warning C4244: 'bağımsız değişken': 'float' - 'int' dönüşümü; veri kaybı olabilir
+  ('Game%20Project%201.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(54,35): warning C4244: 'bağımsız değişken': 'float' - 'int' dönüşümü; veri kaybı olabilir
+  ('Game%20Project%201.cpp' kaynak dosyası derleniyor)
+  
+  Player.cpp
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(47,23): warning C4244: '=': 'int' - 'float' dönüşümü; veri kaybı olabilir
+  ('Player.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(48,24): warning C4244: '=': 'int' - 'float' dönüşümü; veri kaybı olabilir
+  ('Player.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(49,32): warning C4244: '=': 'int' - 'float' dönüşümü; veri kaybı olabilir
+  ('Player.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(50,33): warning C4244: '=': 'int' - 'float' dönüşümü; veri kaybı olabilir
+  ('Player.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(54,51): warning C4244: 'bağımsız değişken': 'float' - 'int' dönüşümü; veri kaybı olabilir
+  ('Player.cpp' kaynak dosyası derleniyor)
+  
+D:\Projects\C++\Game Project 1\Game Project 1\Player.h(54,35): warning C4244: 'bağımsız değişken': 'float' - 'int' dönüşümü; veri kaybı olabilir
+  ('Player.cpp' kaynak dosyası derleniyor)
   
   Kod Üretiliyor...
   Game Project 1.vcxproj -> D:\Projects\C++\Game Project 1\x64\Debug\Game Project 1.exe
